@@ -1,0 +1,108 @@
+/* General reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  color: #333;
+}
+
+/* Header */
+.header {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Form styling */
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[type="text"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Button styles */
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  margin-left: 1rem;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* Todo list */
+.list {
+  list-style: none;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-inline: auto;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.list label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Checkbox effect */
+input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+/* Optional strikethrough for completed todos (enhancement idea) */
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #888;
+}
